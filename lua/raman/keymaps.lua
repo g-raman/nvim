@@ -4,9 +4,6 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
--- Deletion
-keymap.set("n", "x", '"_x"')
-
 -- Text movment
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
