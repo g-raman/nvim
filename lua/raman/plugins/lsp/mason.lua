@@ -30,6 +30,7 @@ return {
 				"tsserver",
 				"tailwindcss",
 				"jdtls",
+				"gopls",
 			},
 			automatic_installation = true,
 		})
@@ -43,6 +44,7 @@ return {
 				"pylint", -- python linter
 				"eslint_d", -- js linter
 				"google-java-format",
+				"gofumpt",
 			},
 		})
 	end,
