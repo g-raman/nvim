@@ -45,6 +45,7 @@ return {
 				"eslint_d", -- js linter
 				"google-java-format",
 				"gofumpt",
+				"prettierd",
 			},
 		})
 	end,
