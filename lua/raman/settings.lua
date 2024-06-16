@@ -17,6 +17,9 @@ opt.backspace = "indent,eol,start"
 opt.ignorecase = true
 opt.smartcase = true
 
+-- Cursor Line
+opt.cursorline = true
+
 -- Swap files & Caching
 opt.swapfile = false
 opt.backup = false
@@ -30,6 +33,7 @@ opt.incsearch = true
 -- UI
 opt.termguicolors = true
 opt.scrolloff = 10
+opt.signcolumn = "yes"
 
 -- Update time
 opt.updatetime = 50
