@@ -13,6 +13,10 @@ opt.smartindent = true
 opt.wrap = false
 opt.backspace = "indent,eol,start"
 
+-- Search
+opt.ignorecase = true
+opt.smartcase = true
+
 -- Swap files & Caching
 opt.swapfile = false
 opt.backup = false
