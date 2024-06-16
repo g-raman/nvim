@@ -7,7 +7,7 @@ return {
 		local catppuccin = {}
 		local function get_short_cwd()
 			local cwd = vim.fn.getcwd():match(".*/([^/]+)$")
-			return " " .. (cwd or ""):sub(1, 1):upper() .. cwd:sub(2)
+			return " " .. (cwd or "")
 		end
 
 		catppuccin.normal = {
