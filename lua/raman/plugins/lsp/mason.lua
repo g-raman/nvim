@@ -29,8 +29,6 @@ return {
 				"pyright",
 				"tsserver",
 				"tailwindcss",
-				"jdtls",
-				"gopls",
 			},
 			automatic_installation = true,
 		})
@@ -43,8 +41,6 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
-				"google-java-format",
-				"gofumpt",
 				"prettierd",
 			},
 		})
