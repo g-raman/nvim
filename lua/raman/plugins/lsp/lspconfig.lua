@@ -56,7 +56,16 @@ return {
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
-		local servers = { "html", "cssls", "tailwindcss", "pyright", "eslint", }
+		local servers = {
+			"html",
+			"cssls",
+			"tailwindcss",
+			"pyright",
+			"eslint",
+			"angularls",
+			"powershell_es",
+			"denols",
+		}
 
 		for _, server in ipairs(servers) do
 			lspconfig[server].setup({
@@ -65,7 +74,7 @@ return {
 			})
 		end
 
-		lspconfig["tsserver"].setup({
+		lspconfig["ts_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			init_options = {

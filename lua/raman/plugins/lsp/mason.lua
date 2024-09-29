@@ -27,8 +27,11 @@ return {
 				"emmet_ls",
 				"eslint",
 				"pyright",
-				"tsserver",
+				"ts_ls",
 				"tailwindcss",
+				"denols",
+				"angularls",
+				"powershell_es",
 			},
 			automatic_installation = true,
 		})

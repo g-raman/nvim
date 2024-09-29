@@ -42,3 +42,8 @@ opt.updatetime = 50
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 20
 vim.keymap.set("n", "<leader>le", ":Lexplore<CR>")
+
+-- Deno
+vim.g.markdown_fenced_languages = {
+	"ts=typescript",
+}
