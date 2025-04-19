@@ -6,7 +6,7 @@ return {
 	hijack_cursor = true,
 	lazy = true,
 	keys = {
-		{ "<leader>e", "<cmd>NvimTreeToggle<CR>" },
+		{ "<leader>e", "<cmd>NvimTreeToggle<CR>", "Toggle Nvim Tree" },
 	},
 	opts = {
 		sort_by = "extension",

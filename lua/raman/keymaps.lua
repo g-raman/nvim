@@ -30,12 +30,6 @@ keymap.set("n", "N", "Nzzzv")
 -- Refactor
 keymap.set("n", "<leader>rf", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- Tmux + Nvim
-keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>")
-keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>")
-keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>")
-keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>")
-
 -- Window tiling
 keymap.set("n", "<leader>sv", "<C-w>v") -- Split vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- Split horizontally

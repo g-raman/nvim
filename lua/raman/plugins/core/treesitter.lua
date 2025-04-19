@@ -16,13 +16,14 @@ return {
 				use_languagetree = true,
 			},
 			indent = { enable = true },
-			-- Enable autotagging (w/ nvim-ts-autotag plugin)
 			autotag = { enable = true },
 			ensure_installed = {
 				-- Web dev
 				"html",
 				"css",
 				"javascript",
+				"markdown",
+				"markdown_inline",
 				"json",
 
 				-- Git
@@ -36,8 +37,6 @@ return {
 				"java",
 				"bash",
 				"vim",
-				"markdown",
-				"markdown_inline",
 			},
 			auto_install = true,
 		})
