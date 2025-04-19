@@ -1,16 +1,16 @@
 -- Diagnostics configuration
-vim.diagnostic.config({
-	virtual_text = {
-		prefix = "",
-	},
-	severity_sort = true,
-	update_in_insert = false,
-	float = {
-		focusable = false,
-		header = "Diagnostics:",
-		prefix = "",
-	},
-})
+-- vim.diagnostic.config({
+-- 	virtual_text = {
+-- 		prefix = "",
+-- 	},
+-- 	severity_sort = true,
+-- 	update_in_insert = false,
+-- 	float = {
+-- 		focusable = false,
+-- 		header = "Diagnostics:",
+-- 		prefix = "",
+-- 	},
+-- })
 
 -- Add signs in sign column
 local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }

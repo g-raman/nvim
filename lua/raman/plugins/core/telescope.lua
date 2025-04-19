@@ -5,6 +5,10 @@ return {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
+		{
+			"nvim-telescope/telescope-live-grep-args.nvim",
+			version = "^1.0.0",
+		},
 	},
 
 	config = function()
@@ -17,7 +21,7 @@ return {
 					i = {
 						["<C-k>"] = actions.move_selection_previous,
 						["<C-j>"] = actions.move_selection_next,
-						-- ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+						["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 					},
 				},
 			},
@@ -30,6 +34,8 @@ return {
 
 		keymap.set("n", "<leader>ff", builtin.find_files, {})
 		keymap.set("n", "<leader>fg", builtin.git_files, {})
-		keymap.set("n", "<leader>fw", builtin.live_grep, {})
+		keymap.set("n", "<leader>fw", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", {})
+
+		telescope.load_extension("live_grep_args")
 	end,
 }

@@ -4,25 +4,20 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
--- Text movment
-keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-
 -- Fix annoying things
 keymap.set("n", "J", "mzJ`z")
 keymap.set("n", "Q", "<nop>")
 
--- Yanking
+-- Yank to System Clipboard
 keymap.set("n", "<leader>y", '"+y')
 keymap.set("v", "<leader>y", '"+y')
-keymap.set("n", "<leader>Y", '"+Y')
 
 -- Deletion
 keymap.set("x", "<leader>p", '"_dP')
 keymap.set("n", "<leader>d", '"_d')
 keymap.set("v", "<leader>d", '"_d')
 
--- Pasting
+-- Pasting from System Clipboard
 keymap.set("n", "<leader>p", '"+p')
 keymap.set("v", "<leader>p", '"+p')
 

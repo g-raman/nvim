@@ -62,9 +62,6 @@ return {
 			"tailwindcss",
 			"pyright",
 			"eslint",
-			"angularls",
-			"powershell_es",
-			"denols",
 		}
 
 		for _, server in ipairs(servers) do
@@ -74,9 +71,15 @@ return {
 			})
 		end
 
+		-- lspconfig["denols"].setup({
+		-- 	on_attach = on_attach,
+		-- 	root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+		-- })
+
 		lspconfig["ts_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			root_dir = lspconfig.util.root_pattern("package.json", "package-lock.json"),
 			init_options = {
 				preferences = {
 					disableSuggestions = true,
