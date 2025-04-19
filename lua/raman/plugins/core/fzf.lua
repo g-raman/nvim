@@ -20,7 +20,7 @@ return {
 		{
 			"<leader>fc",
 			function()
-				require("fzf-lua").files({ cwd = "~/.config" })
+				require("fzf-lua").files({ cwd = "~/dotfiles/" })
 			end,
 			desc = "[F]ind [F]iles",
 		},
