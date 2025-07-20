@@ -21,7 +21,7 @@ return {
 
 				map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction", { "n", "x" })
 
-				map("gr", fzf.lsp_references, "[G]oto [R]eferences")
+				map("gR", fzf.lsp_references, "[G]oto [R]eferences")
 
 				map("gi", fzf.lsp_implementations, "[G]oto [I]mplementation")
 
