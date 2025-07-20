@@ -63,9 +63,18 @@ return {
 		},
 
 		sources = {
-			default = { "lsp", "path", "snippets", "buffer" },
+			default = {
+				"lsp",
+				"path",
+				"buffer",
+				"snippets",
+			},
 		},
-		fuzzy = { implementation = "lua" },
+		fuzzy = { implementation = "lua", sorts = {
+			"score",
+			"sort_text",
+			"kind",
+		} },
 	},
 	opts_extend = { "sources.default" },
 }
