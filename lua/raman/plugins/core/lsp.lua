@@ -75,6 +75,7 @@ return {
 		local servers = {
 			html = {},
 			cssls = {},
+			jsonls = {},
 			tailwindcss = {},
 			eslint = {
 				root_dir = lspconfig.util.root_pattern("package.json", "package-lock.json"),
