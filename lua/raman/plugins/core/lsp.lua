@@ -99,10 +99,6 @@ return {
 						completion = {
 							callSnippet = "Replace",
 						},
-						diagnostics = {
-							globals = { "vim" },
-							disable = { "missing-fields" },
-						},
 						workspace = {
 							library = {
 								[vim.fn.expand("$VIMRUNTIME/lua")] = true,
@@ -113,6 +109,17 @@ return {
 				},
 			},
 		}
+
+		vim.lsp.config("lua_ls", {
+			settings = {
+				Lua = {
+					diagnostics = {
+						globals = { "vim" },
+						disable = { "missing-fields" },
+					},
+				},
+			},
+		})
 
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
