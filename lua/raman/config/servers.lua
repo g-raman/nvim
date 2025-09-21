@@ -7,6 +7,7 @@ local servers = {
 	"lua_ls",
 	"pyright",
 	"tailwindcss",
+	"biome",
 }
 
 return servers
