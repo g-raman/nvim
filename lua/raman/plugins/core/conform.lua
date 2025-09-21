@@ -1,3 +1,4 @@
+local prettier_config = { "prettierd", "prettier", stop_after_first = true }
 return {
 	"stevearc/conform.nvim",
 	lazy = true,
@@ -8,15 +9,15 @@ return {
 
 			python = { "isort", "black" },
 
-			javascript = { "prettierd", "prettier", stop_after_first = true },
-			typescript = { "prettierd", "prettier", stop_after_first = true },
-			javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+			javascript = prettier_config,
+			typescript = prettier_config,
+			javascriptreact = prettier_config,
+			typescriptreact = prettier_config,
 
-			css = { "prettierd", "prettier", stop_after_first = true },
-			html = { "prettierd", "prettier", stop_after_first = true },
-			json = { "prettierd", "prettier", stop_after_first = true },
-			markdown = { "prettierd", "prettier", stop_after_first = true },
+			css = prettier_config,
+			html = prettier_config,
+			json = prettier_config,
+			markdown = prettier_config,
 		},
 		format_on_save = {
 			lsp_fallback = true,
