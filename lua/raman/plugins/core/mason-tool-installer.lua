@@ -3,7 +3,8 @@ local ensure_installed = vim.list_extend(servers, {
 	"stylua",
 	"prettierd",
 	"prettier",
-	"clang-format",
+	"isort",
+	"black",
 })
 
 return {
