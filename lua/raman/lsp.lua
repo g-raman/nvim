@@ -1,3 +1,5 @@
+local servers = require("raman.config.servers")
+
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
 	callback = function(event)
@@ -56,14 +58,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
-local servers = {
-	"bashls",
-	"cssls",
-	"eslint",
-	"html",
-	"jsonls",
-	"lua_ls",
-	"pyright",
-	"tailwindcss",
-}
 vim.lsp.enable(servers)
