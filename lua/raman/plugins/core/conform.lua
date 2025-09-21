@@ -1,4 +1,15 @@
 local prettier_config = { "prettierd", "prettier", stop_after_first = true }
+
+local js_config = function(bufnr)
+	local biome_config_path = vim.fn.findfile("biome.json", vim.fn.expand("%:p:h") .. ";")
+
+	if biome_config_path ~= "" and require("conform").get_formatter_info("biome", bufnr).available then
+		return { "biome" }
+	else
+		return prettier_config
+	end
+end
+
 return {
 	"stevearc/conform.nvim",
 	lazy = true,
@@ -9,14 +20,15 @@ return {
 
 			python = { "isort", "black" },
 
-			javascript = prettier_config,
-			typescript = prettier_config,
-			javascriptreact = prettier_config,
-			typescriptreact = prettier_config,
+			javascript = js_config,
+			typescript = js_config,
+			javascriptreact = js_config,
+			typescriptreact = js_config,
 
-			css = prettier_config,
-			html = prettier_config,
-			json = prettier_config,
+			html = js_config,
+			css = js_config,
+			json = js_config,
+
 			markdown = prettier_config,
 		},
 		format_on_save = {
