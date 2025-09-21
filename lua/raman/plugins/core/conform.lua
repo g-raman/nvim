@@ -29,7 +29,7 @@ return {
 			"<leader>fm",
 			function()
 				require("conform").format({
-					lsp_fallback = true,
+					lsp_fallback = false,
 					async = false,
 					timeout_ms = 1000,
 				})
