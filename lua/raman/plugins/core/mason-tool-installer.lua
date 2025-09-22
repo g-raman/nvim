@@ -1,10 +1,18 @@
 local servers = require("raman.config.servers")
 local ensure_installed = vim.list_extend(servers, {
+	-- Lua
 	"stylua",
+
+	-- JS, TS, HTML, CSS, JSON
 	"prettierd",
 	"prettier",
+
+	-- Python
 	"isort",
 	"black",
+
+	-- TOML
+	"taplo",
 })
 
 return {

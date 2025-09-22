@@ -30,6 +30,8 @@ return {
 			json = js_config,
 
 			markdown = prettier_config,
+
+			toml = { "taplo" },
 		},
 		format_on_save = {
 			lsp_fallback = false,
