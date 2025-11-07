@@ -8,6 +8,7 @@ local servers = {
 	"pyright",
 	"tailwindcss",
 	"biome",
+	"rust_analyzer",
 }
 
 return servers
