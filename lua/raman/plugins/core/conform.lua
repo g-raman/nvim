@@ -32,6 +32,7 @@ return {
 			markdown = prettier_config,
 
 			toml = { "taplo" },
+			rust = { "rustfmt" },
 		},
 		format_on_save = {
 			lsp_fallback = false,
