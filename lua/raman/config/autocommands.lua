@@ -1,3 +1,4 @@
+-- Save cursor position
 vim.api.nvim_create_autocmd("BufReadPost", {
 	callback = function(args)
 		local mark = vim.api.nvim_buf_get_mark(args.buf, '"')
