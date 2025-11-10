@@ -24,6 +24,7 @@ return {
 			typescript = js_config,
 			javascriptreact = js_config,
 			typescriptreact = js_config,
+			svelte = js_config,
 
 			html = js_config,
 			css = js_config,

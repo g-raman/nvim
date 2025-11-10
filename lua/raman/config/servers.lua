@@ -9,6 +9,7 @@ local servers = {
 	"tailwindcss",
 	"biome",
 	"rust_analyzer",
+	"svelte",
 }
 
 return servers
