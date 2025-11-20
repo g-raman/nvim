@@ -10,6 +10,7 @@ local servers = {
 	"biome",
 	"rust_analyzer",
 	"svelte",
+	"tinymist",
 }
 
 return servers

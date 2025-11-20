@@ -13,6 +13,9 @@ local ensure_installed = vim.list_extend(servers, {
 
 	-- TOML
 	"taplo",
+
+	-- Typst
+	"typstyle",
 })
 
 return {
