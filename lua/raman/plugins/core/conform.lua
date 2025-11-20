@@ -31,6 +31,7 @@ return {
 			json = js_config,
 
 			markdown = prettier_config,
+			typst = { "typstyle" },
 
 			toml = { "taplo" },
 			rust = { "rustfmt" },
