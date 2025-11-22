@@ -11,6 +11,7 @@ local servers = {
 	"rust_analyzer",
 	"svelte",
 	"tinymist",
+	"cspell-lsp",
 }
 
 return servers
