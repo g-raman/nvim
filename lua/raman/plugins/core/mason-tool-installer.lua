@@ -10,8 +10,7 @@ local ensure_installed = vim.list_extend(servers, {
 	"oxfmt",
 
 	-- Python
-	"isort",
-	"black",
+	"ruff",
 
 	-- TOML
 	"taplo",
