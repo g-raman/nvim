@@ -12,6 +12,7 @@ local servers = {
 	"svelte",
 	"tinymist",
 	"cspell-lsp",
+	"oxlint",
 }
 
 return servers
