@@ -7,6 +7,8 @@ local ensure_installed = vim.list_extend(servers, {
 	"prettierd",
 	"prettier",
 
+	"oxfmt",
+
 	-- Python
 	"isort",
 	"black",

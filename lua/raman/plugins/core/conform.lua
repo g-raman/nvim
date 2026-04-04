@@ -1,13 +1,19 @@
 local prettier_config = { "prettierd", "prettier", stop_after_first = true }
 
 local js_config = function(bufnr)
-	local biome_config_path = vim.fn.findfile("biome.json", vim.fn.expand("%:p:h") .. ";")
+	local buf_dir = vim.fn.expand("%:p:h") .. ";"
 
-	if biome_config_path ~= "" and require("conform").get_formatter_info("biome", bufnr).available then
-		return { "biome" }
-	else
-		return prettier_config
+	local biome_config_path = vim.fn.findfile("biome.json", buf_dir)
+	local oxfmt_config_path = vim.fn.findfile(".oxfmtrc.json", buf_dir)
+	if oxfmt_config_path ~= "" and require("conform").get_formatter_info("oxfmt", bufnr).available then
+		return { "oxfmt" }
 	end
+
+	-- if biome_config_path ~= "" and require("conform").get_formatter_info("biome", bufnr).available then
+	-- 	return { "biome" }
+	-- end
+
+	return prettier_config
 end
 
 return {
