@@ -1,14 +1,15 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	branch = "main",
-	event = { "BufReadPre", "BufNewFile" },
 	build = ":TSUpdate",
 	lazy = false,
 	dependencies = { "windwp/nvim-ts-autotag" },
+	event = { "BufReadPre", "BufNewFile" },
 
 	config = function()
 		local treesitter = require("nvim-treesitter")
 		treesitter.setup({
+			install_dir = vim.fn.stdpath("data") .. "/site",
 			highlight = {
 				enable = true,
 				additional_vim_regex_highlighting = false,
