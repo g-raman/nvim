@@ -13,6 +13,7 @@ local servers = {
 	"tinymist",
 	"cspell-lsp",
 	"oxlint",
+	"gopls",
 }
 
 return servers

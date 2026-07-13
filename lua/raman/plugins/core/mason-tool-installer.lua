@@ -12,6 +12,9 @@ local ensure_installed = vim.list_extend(servers, {
 	-- Python
 	"ruff",
 
+	-- Go
+	"gofumpt",
+
 	-- TOML
 	"taplo",
 

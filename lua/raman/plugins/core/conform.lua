@@ -41,6 +41,7 @@ return {
 
 			toml = { "taplo" },
 			rust = { "rustfmt" },
+			go = { "gofumpt" },
 		},
 		format_on_save = {
 			lsp_fallback = false,
