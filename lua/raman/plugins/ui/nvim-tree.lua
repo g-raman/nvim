@@ -25,7 +25,7 @@ return {
 		view = {
 			adaptive_size = false,
 			side = "right",
-			width = 28,
+			width = 72,
 			preserve_window_proportions = true,
 		},
 
